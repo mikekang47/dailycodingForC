@@ -1,14 +1,25 @@
-//
-//  main.c
-//  arithmeticSequence
-//
-//  Created by 강경록 on 2021/02/23.
-//
-
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+int sequence(int a);
+
+int main() {
+    int a;
+    scanf("%d", &a);
+    printf("%d\n", sequence(a));
+    
+}
+
+int sequence(int a) {
+    int count = 0;
+    for(int i = 1; i <= a; i++) {
+        if(i < 100) {
+            count++;
+        }
+        else {
+            if(((i / 100) - (i % 100)/10) == (((i % 100)/10)-((i%100)%10))) {
+                count++;
+            }
+        }
+    }
+    return count;
 }
