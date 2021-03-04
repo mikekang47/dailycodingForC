@@ -1,13 +1,17 @@
 #include <stdio.h>
 
 int main() {
+    int s, j;
     int a;
-    char c = '*';
     scanf("%d", &a);
-    for(int i = 0; i < a; i++) {
-        for(int j = i; j > i; j--) {
-            printf("%c", c);
+    for(j = 0; j < a; j++) {
+        for(s = 0; s < a-j-1; s++) {
+            printf(" ");
+        }
+        for(s = 0; s <= j; s++) {
+            printf("*");
         }
         printf("\n");
     }
+    return 0;
 }
