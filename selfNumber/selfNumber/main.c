@@ -1,9 +1,12 @@
 #include <stdio.h>
+
 int self_num();
+
 int main() {
     self_num();
     return 0;
 }
+
 int self_num(){
     int i, arr[10001] = {0}, res = 0;
     for (i = 1; i <= 10000; i++){
