@@ -1,21 +1,29 @@
 #include <stdio.h>
 #include <string.h>
 
-double gettingAverage(int scores[], int length) {
-    double average = 0;
-    for(int i = 0; i < length; i++) {
-        average += scores[i];
-    }
-    return average / length;
-}
-
 int main() {
     int testCase;
-    double average = 0;
-    int scores[1000];
+    double numberOfStudent;
+    int scores[1001];
+    int sum = 0;
+    double average;
+    int count = 0;
     scanf("%d", &testCase);
     for(int i = 0; i < testCase; i++) {
-        scanf("%")
-        
+        scanf("%lf", &numberOfStudent);
+        for(int j = 0; j < numberOfStudent; j++) {
+            scanf("%d", &scores[j]);
+            sum += scores[j];
+        }
+        average = sum / numberOfStudent;
+        for(int k = 0; k < numberOfStudent;k++) {
+            if(scores[k] > average) {
+                count++;
+            }
+        }
+        printf("%.3lf%%\n", (double)(count / numberOfStudent * 100));
+        sum = 0;
+        average = 0;
+        count = 0;
     }
 }

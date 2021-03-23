@@ -9,7 +9,6 @@ int main() {
     for(int i = 0; i < length; i++) {
         scanf("%d", &array[i]);
     }
-//    mergeSort(array);
 }
 
 void mergeSort(int low, int mid, int high) {
