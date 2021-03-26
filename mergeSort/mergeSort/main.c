@@ -6,11 +6,17 @@ void merge(int a[], int low, int mid, int high);
 void bottomUpMergeSort(int a[]);
 
 int main() {
-    int a[] = {1, 5, 2, 6, 3, 8, 9, 10};
+    int a[1000001] = {0, };
+    int num;
+    scanf("%d", &num);
+    for(int i = 0; i < num; i++) {
+        scanf("%d", &a[i]);
+    }
     bottomUpMergeSort(a);
-    for(int i = 0; i < 8; i++) {
+    for(int i = 0; i < num; i++) {
         printf("%d\n", a[i]);
     }
+    return 0;
 }
 
 
