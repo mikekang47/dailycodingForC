@@ -3,7 +3,6 @@
 int main() {
     int N;
     scanf("%d", &N);
-    //72 입력
     if(N == 1) {
         return 0;
     }
