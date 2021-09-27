@@ -1,0 +1,3 @@
+/Users/mikekang/work/dailycodingForC/programCreation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mikekang/work/dailycodingForC/programCreation/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mikekang/work/dailycodingForC/programCreation/cmake-build-debug/CMakeFiles/programCreation.dir
